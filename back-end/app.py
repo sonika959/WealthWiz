@@ -40,6 +40,7 @@ def preprocess(text):
 
 @app.route('/predict', methods=['POST'])
 def predict():
+    
     data = request.get_json()
     user_input = data.get('input', '')
 
